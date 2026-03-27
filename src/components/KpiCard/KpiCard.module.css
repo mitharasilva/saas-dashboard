@@ -1,0 +1,29 @@
+@reference "../../index.css";
+
+.card {
+  @apply bg-gray-900 border border-gray-800 rounded-xl p-5 relative overflow-hidden;
+}
+
+.bar {
+  @apply absolute top-0 left-0 right-0 h-0.5;
+}
+
+.barEmerald {
+  @apply bg-emerald-500;
+}
+
+.barAmber {
+  @apply bg-amber-500;
+}
+
+.barRed {
+  @apply bg-red-500;
+}
+
+.label {
+  @apply text-xs text-gray-500 mb-2;
+}
+
+.value {
+  @apply text-2xl font-semibold tracking-tight;
+}

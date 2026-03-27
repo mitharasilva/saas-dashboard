@@ -1,0 +1,61 @@
+@reference "../../index.css";
+
+.page {
+  @apply min-h-screen bg-gray-950 text-white flex;
+}
+
+/* Main */
+.main {
+  @apply flex-1 p-8 overflow-auto;
+}
+
+.pageHeader {
+  @apply mb-8;
+}
+
+.pageTitle {
+  @apply text-xl font-medium;
+}
+
+.pageSubtitle {
+  @apply text-gray-500 text-sm mt-1;
+}
+
+/* Grids */
+.kpiGrid {
+  @apply grid grid-cols-4 gap-4 mb-8;
+}
+
+.chartsGrid {
+  @apply grid grid-cols-2 gap-4 mb-8;
+}
+
+.bottomGrid {
+  @apply grid grid-cols-3 gap-4;
+}
+
+/* Cards */
+.card {
+  @apply bg-gray-900 border border-gray-800 rounded-xl p-5;
+}
+
+.cardWide {
+  @apply col-span-2 bg-gray-900 border border-gray-800 rounded-xl p-5;
+}
+
+.cardTitle {
+  @apply text-sm font-medium mb-4;
+}
+
+/* Misc */
+.insightsList {
+  @apply space-y-3;
+}
+
+.noData {
+  @apply text-gray-600 text-sm;
+}
+
+.skeleton {
+  @apply h-48 bg-gray-800 rounded-lg animate-pulse;
+}

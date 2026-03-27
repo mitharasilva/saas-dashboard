@@ -1,0 +1,45 @@
+@reference "../../index.css";
+
+.table {
+  @apply w-full text-sm;
+}
+
+.theadRow {
+  @apply text-gray-500 text-xs border-b border-gray-800;
+}
+
+.thLeft {
+  @apply text-left pb-2 font-medium;
+}
+
+.thRight {
+  @apply text-right pb-2 font-medium;
+}
+
+.tbody {
+  @apply divide-y divide-gray-800;
+}
+
+.row {
+  @apply text-gray-300;
+}
+
+.cellEndpoint {
+  @apply py-2.5 font-mono text-xs text-gray-400;
+}
+
+.cell {
+  @apply py-2.5 text-right;
+}
+
+.cellTraffic {
+  @apply py-2.5 text-right text-gray-500;
+}
+
+.errorHigh {
+  @apply text-red-400;
+}
+
+.errorMed {
+  @apply text-amber-400;
+}

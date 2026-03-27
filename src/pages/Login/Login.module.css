@@ -1,0 +1,47 @@
+@reference "../../index.css";
+
+.page {
+  @apply min-h-screen bg-gray-950 flex items-center justify-center p-4;
+}
+
+.inner {
+  @apply w-full max-w-sm;
+}
+
+.header {
+  @apply mb-8 text-center;
+}
+
+.dot {
+  @apply inline-block w-2 h-2 rounded-full bg-emerald-400 mb-4;
+}
+
+.title {
+  @apply text-white text-xl font-medium;
+}
+
+.subtitle {
+  @apply text-gray-500 text-sm mt-1;
+}
+
+.form {
+  @apply bg-gray-900 border border-gray-800 rounded-xl p-6 space-y-4;
+}
+
+.error {
+  @apply bg-red-950 border border-red-800 text-red-400 text-sm rounded-lg px-4 py-3;
+}
+
+.label {
+  @apply block text-xs text-gray-500 mb-1.5;
+}
+
+.input {
+  @apply w-full bg-gray-950 border border-gray-800 rounded-lg px-3 py-2.5 text-sm text-white
+    placeholder-gray-700 focus:outline-none focus:border-emerald-500 transition-colors;
+}
+
+.button {
+  @apply w-full bg-emerald-500 hover:bg-emerald-400 disabled:opacity-50 text-gray-950
+    font-medium text-sm rounded-lg py-2.5 transition-colors;
+}

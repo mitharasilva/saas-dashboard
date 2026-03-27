@@ -1,0 +1,42 @@
+@reference "../../index.css";
+
+.card {
+  @apply border rounded-lg p-3;
+}
+
+.read {
+  @apply opacity-60;
+}
+
+.category {
+  @apply text-xs font-medium capitalize mb-1;
+}
+
+.title {
+  @apply text-white text-xs font-medium;
+}
+
+.body {
+  @apply text-xs mt-1 opacity-80;
+}
+
+/* Category colour variants */
+.trend {
+  @apply text-blue-400 bg-blue-950 border-blue-900;
+}
+
+.anomaly {
+  @apply text-red-400 bg-red-950 border-red-900;
+}
+
+.forecast {
+  @apply text-purple-400 bg-purple-950 border-purple-900;
+}
+
+.recommendation {
+  @apply text-emerald-400 bg-emerald-950 border-emerald-900;
+}
+
+.default {
+  @apply text-gray-400 bg-gray-800 border-gray-700;
+}
