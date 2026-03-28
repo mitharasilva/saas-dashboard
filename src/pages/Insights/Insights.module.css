@@ -1,0 +1,184 @@
+@reference "../../index.css";
+
+.page {
+  @apply min-h-screen bg-gray-950 text-white flex;
+}
+
+.main {
+  @apply flex-1 p-8 overflow-auto;
+}
+
+/* Header */
+.pageHeader {
+  @apply mb-6;
+}
+
+.pageTitle {
+  @apply text-xl font-medium;
+}
+
+.pageSubtitle {
+  @apply text-gray-500 text-sm mt-1 flex items-center gap-2;
+}
+
+.unreadBadge {
+  @apply bg-emerald-950 text-emerald-400 border border-emerald-900 text-xs px-2 py-0.5 rounded-full;
+}
+
+/* Filter bar */
+.filterBar {
+  @apply flex flex-wrap gap-2 mb-6;
+}
+
+.filterBtn {
+  @apply flex items-center gap-1.5 px-3 py-1.5 text-xs text-gray-400 bg-gray-900 border border-gray-800
+    rounded-lg hover:text-white hover:border-gray-700 transition-colors cursor-pointer;
+}
+
+.filterActive {
+  @apply flex items-center gap-1.5 px-3 py-1.5 text-xs text-white bg-gray-700 border border-gray-600
+    rounded-lg cursor-pointer;
+}
+
+.filterCount {
+  @apply bg-gray-600 text-gray-300 text-xs px-1.5 py-0.5 rounded-full;
+}
+
+.capitalize {
+  @apply capitalize;
+}
+
+/* Bulk actions */
+.bulkBar {
+  @apply flex items-center justify-between mb-4 px-3 py-2 bg-gray-900 border border-gray-800 rounded-lg;
+}
+
+.bulkLabel {
+  @apply text-xs text-gray-500 capitalize;
+}
+
+.bulkActions {
+  @apply flex items-center gap-2;
+}
+
+.bulkBtn {
+  @apply text-xs text-gray-400 hover:text-white transition-colors cursor-pointer;
+}
+
+.bulkDivider {
+  @apply w-px h-3 bg-gray-700;
+}
+
+/* Tiers */
+.tier {
+  @apply mb-8;
+}
+
+.tierHeader {
+  @apply flex items-center gap-2 mb-3;
+}
+
+.tierLabel {
+  @apply text-xs font-medium text-gray-400 uppercase tracking-wider;
+}
+
+.tierCount {
+  @apply text-xs text-gray-600 bg-gray-800 px-1.5 py-0.5 rounded-full;
+}
+
+.tierEmpty {
+  @apply text-gray-600 text-sm py-4;
+}
+
+/* Grid */
+.grid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+/* Insight card */
+.card {
+  @apply border rounded-xl p-4 flex flex-col gap-2;
+}
+
+.read {
+  @apply opacity-50 grayscale;
+}
+
+.cardHeader {
+  @apply flex items-center justify-between;
+}
+
+.badge {
+  @apply text-xs font-medium capitalize px-2 py-0.5 rounded-full border;
+}
+
+.markReadBtn {
+  @apply text-xs text-gray-500 hover:text-gray-300 transition-colors cursor-pointer;
+}
+
+.cardTitle {
+  @apply text-sm font-medium text-white;
+}
+
+.cardBody {
+  @apply text-xs opacity-80 leading-relaxed;
+}
+
+.cardDate {
+  @apply text-xs text-gray-500 mt-auto;
+}
+
+/* Category colour variants */
+.trend {
+  @apply text-blue-400 bg-blue-950 border-blue-900;
+}
+
+.anomaly {
+  @apply text-red-400 bg-red-950 border-red-900;
+}
+
+.forecast {
+  @apply text-purple-400 bg-purple-950 border-purple-900;
+}
+
+.recommendation {
+  @apply text-emerald-400 bg-emerald-950 border-emerald-900;
+}
+
+.defaultCategory {
+  @apply text-gray-400 bg-gray-800 border-gray-700;
+}
+
+/* Pagination */
+.pagination {
+  @apply flex items-center justify-between mt-6 pt-4 border-t border-gray-800;
+}
+
+.pageInfo {
+  @apply text-xs text-gray-500;
+}
+
+.pageButtons {
+  @apply flex items-center gap-3;
+}
+
+.pageBtn {
+  @apply text-xs text-gray-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer;
+}
+
+.pageCount {
+  @apply text-xs text-gray-500;
+}
+
+/* Loading / empty */
+.loadingGrid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.skeleton {
+  @apply h-32 bg-gray-800 rounded-xl animate-pulse;
+}
+
+.empty {
+  @apply text-gray-500 text-sm py-16 text-center;
+}

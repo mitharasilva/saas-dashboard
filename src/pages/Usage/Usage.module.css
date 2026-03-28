@@ -1,0 +1,121 @@
+@reference "../../index.css";
+
+.page {
+  @apply min-h-screen bg-gray-950 text-white flex;
+}
+
+.main {
+  @apply flex-1 p-8 overflow-auto;
+}
+
+/* Header */
+.pageHeader {
+  @apply flex items-start justify-between mb-8;
+}
+
+.pageTitle {
+  @apply text-xl font-medium;
+}
+
+.pageSubtitle {
+  @apply text-gray-500 text-sm mt-1;
+}
+
+/* Range picker */
+.rangePicker {
+  @apply flex gap-1 bg-gray-900 border border-gray-800 rounded-lg p-1;
+}
+
+.rangeBtn {
+  @apply px-3 py-1.5 text-xs text-gray-400 rounded-md hover:text-white transition-colors cursor-pointer;
+}
+
+.rangeActive {
+  @apply px-3 py-1.5 text-xs text-white bg-gray-700 rounded-md cursor-pointer;
+}
+
+/* KPIs */
+.kpiGrid {
+  @apply grid grid-cols-3 gap-4 mb-8;
+}
+
+/* Charts */
+.chartsGrid {
+  @apply grid grid-cols-2 gap-4 mb-8;
+}
+
+/* Cards */
+.card {
+  @apply bg-gray-900 border border-gray-800 rounded-xl p-5 mb-4 last:mb-0;
+}
+
+.cardTitle {
+  @apply text-sm font-medium mb-4;
+}
+
+/* Table */
+.table {
+  @apply w-full text-sm;
+}
+
+.theadRow {
+  @apply text-gray-500 text-xs border-b border-gray-800;
+}
+
+.thLeft {
+  @apply text-left pb-2 font-medium;
+}
+
+.thRight {
+  @apply text-right pb-2 font-medium;
+}
+
+.tbody {
+  @apply divide-y divide-gray-800;
+}
+
+.tableRow {
+  @apply text-gray-300;
+}
+
+.cellMono {
+  @apply py-2.5 font-mono text-xs text-gray-400;
+}
+
+.cell {
+  @apply py-2.5 text-right;
+}
+
+.errorHigh {
+  @apply text-red-400;
+}
+
+.errorMed {
+  @apply text-amber-400;
+}
+
+/* Pagination */
+.pagination {
+  @apply flex items-center justify-between mt-4 pt-4 border-t border-gray-800;
+}
+
+.pageInfo {
+  @apply text-xs text-gray-500;
+}
+
+.pageButtons {
+  @apply flex items-center gap-3;
+}
+
+.pageBtn {
+  @apply text-xs text-gray-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer;
+}
+
+.pageCount {
+  @apply text-xs text-gray-500;
+}
+
+/* Skeleton */
+.skeleton {
+  @apply h-48 bg-gray-800 rounded-lg animate-pulse;
+}

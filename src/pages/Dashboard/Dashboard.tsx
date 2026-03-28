@@ -50,11 +50,11 @@ const ChartsRow = ({usage, performance}: {usage:UsageSummary | undefined, perfor
   return (
           <div className={styles.chartsGrid}>
           <div className={styles.card}>
-            <h2 className={styles.cardTitle}>API Calls (hourly)</h2>
+            <h2 className={styles.cardTitle}>API Calls (Hourly)</h2>
             {usage ? <UsageChart data={usage.hourly} /> : <ChartSkeleton />}
           </div>
           <div className={styles.card}>
-            <h2 className={styles.cardTitle}>Response Time (daily)</h2>
+            <h2 className={styles.cardTitle}>Response Time (Daily)</h2>
             {performance ? <PerformanceChart data={performance.daily} /> : <ChartSkeleton />}
           </div>
         </div>
@@ -95,13 +95,13 @@ const Dashboard = () => {
 
   const { data: usage, isLoading: loadingUsage } = useQuery({
     queryKey: ["usage"],
-    queryFn: getUsage,
+    queryFn: () => getUsage(),
     staleTime: 1000 * 60 * 5,
   });
 
   const { data: performance, isLoading: loadingPerf } = useQuery({
     queryKey: ["performance"],
-    queryFn: getPerformance,
+    queryFn: () => getPerformance(),
     staleTime: 1000 * 60 * 5,
   });
 

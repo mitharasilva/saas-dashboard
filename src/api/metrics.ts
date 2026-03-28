@@ -12,14 +12,16 @@ const range = () => {
   return { from, to };
 };
 
-export const getUsage = async (): Promise<UsageSummary> => {
-  const { from, to } = range();
+export const getUsage = async (hours = 24): Promise<UsageSummary> => {
+  const to = new Date().toISOString();
+  const from = new Date(Date.now() - hours * 60 * 60 * 1000).toISOString();
   const res = await api.get("/metrics/usage", { params: { from, to } });
   return res.data;
 };
 
-export const getPerformance = async (): Promise<PerformanceSummary> => {
-  const { from, to } = range();
+export const getPerformance = async (hours = 24): Promise<PerformanceSummary> => {
+  const to = new Date().toISOString();
+  const from = new Date(Date.now() - hours * 60 * 60 * 1000).toISOString();
   const res = await api.get("/metrics/performance", { params: { from, to } });
   return res.data;
 };
